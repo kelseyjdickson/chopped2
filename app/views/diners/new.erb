@@ -1,0 +1,11 @@
+
+
+<h1> Add a new Diner </h1>
+<%= form_with model: @diner do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+    <%= f.label :borough %>
+    <%= f.text_field :borough %><br>
+    <%= f.submit "Submit Diner"%>
+
+<% end %>

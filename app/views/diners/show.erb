@@ -1,0 +1,17 @@
+
+
+<h1>☕️<%= @diner.name%>☕️</h1>
+<hr>
+<h3><%= @diner.borough%></h3>
+
+
+<hr>
+<h4>Ratings<h4>
+<%=link_to "Rating's Homepage", ratings_path %><br>
+
+
+
+
+<%=link_to "Chopped Homepage", diners_path %>
+
+<%=button_to "Delete",diner_path(@diner.id), method: :delete %>

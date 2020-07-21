@@ -1,0 +1,9 @@
+
+
+<h1>A list of our Diners:</h1>
+
+<% @diners.each do |diner| %>
+<li>
+<%= link_to diner.name, "/diners/#{diner.id}" %>  | <%= diner.borough %></li><br>
+
+<%end%>

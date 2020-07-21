@@ -1,0 +1,8 @@
+
+<h1>A list of our Ratings:</h1>
+
+<% @ratings.each do |rating| %>
+<li>
+<%=  rating.rating %>  | <%= rating.num_of_stars %></li><br>
+
+<%end%>
